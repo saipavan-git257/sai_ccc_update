@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent master
 
     stages {
         stage('Build') {
@@ -12,6 +12,6 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                echoss 'Deploying...'// Add deployment commands he
+                echo 'Deploying...'// Add deployment commands he
         }
     }}
